@@ -1,0 +1,14 @@
+@Vejnavne.API_HostAddress = http://localhost:5003
+
+@kommuneKode = 0101
+@vejKode = 1118
+
+GET {{Vejnavne.API_HostAddress}}/api/VejNavne/FilterByKommuneKodeAndVejKode/{{kommuneKode}}/{{vejKode}}
+Accept: application/json
+
+###
+
+@vejnavn = Holstebrovej
+
+GET {{Vejnavne.API_HostAddress}}/api/VejNavne/FilterByVejnavn/{{vejnavn}}
+Accept: application/json
